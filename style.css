@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(pics/back.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    width: 100%;
+}
+
+.pic {
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vh;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: auto;
+    font-size: 1.5vh;
+}
+
+.side-panel {
+    margin-top: 30vh;
+    margin-left: auto;
+    width: 40vh;
+}
+
+.title {
+    font-size: 3vh;
+}
+
+.subtitle {
+    margin-top: 2vh;
+    font-size: 1.5vh;
+    color: rgb(42, 41, 41);
+}
+
+.button {
+    margin-top: 2vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: linear-gradient(to left, #11998e, #0dc9c2);
+    background-size: 300%;
+    color: white;
+    padding: 2vh;
+    width: 20vh;
+    font-size: 1.5vh;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.menuitem {
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.menuitem:hover {
+    background-color: rgb(13, 201, 194);
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-position: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .menu {
+        font-size: 1.8vh;
+    }
+
+    .title {
+        font-size: 3.5vh;
+    }
+
+    .subtitle {
+        font-size: 2vh;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .pic {
+        height: 35px;
+    }
+
+    .menu {
+        font-size: 1.5vh;
+        gap: 1.5vh;
+    }
+
+    .title {
+        font-size: 3.2vh;
+    }
+
+    .subtitle {
+        font-size: 1.8vh;
+    }
+
+    .button {
+        width: 18vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .side-panel{
+        margin-top: 10vh;
+    }
+
+}
